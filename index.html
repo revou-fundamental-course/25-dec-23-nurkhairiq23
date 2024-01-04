@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Kalkulator Matematika - Segitiga</title>
+        <meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/style.css">
+        <script type="text/javascript" src="js/script.js"></script>
+        <link href='http://fonts.googleapis.com/css?family=Righteous' rel='stylesheet' type='text/css'>
+    </head>
+    <body>
+        <div class="jumbotron text-center">
+			<h1>Kalkulator Matematika - Segitiga</h1> 			
+		</div>	
+        <div class="container">
+			<div class="homepage">
+				<div class="text-center">
+					<h2>Welcome to Kalkulator Matematika - Segitiga</h2>
+					<p>Selamat datang di website sederhana menghitung nilai luas dan keliling segitiga
+                    <br/>Tugas Mini Project RevoU - Nurkhairi Amini</p>
+				</div>
+				<ul class="nav nav-justified text-center">
+					<button class="btn btn-pilih" onclick="location.href='#luas-segitiga'">Luas Segitiga</button>
+					<button class="btn btn-pilih" onclick="location.href='#kel-segitiga'">Keliling Segitiga</a></button>
+				</ul>
+				<div class="tab-content">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div id="luas-segitiga" class="panel panel-default text-center">
+                                <div class="panel-heading">
+                                        <h2>Luas Segitiga</h2>
+                                </div>
+                                <div class="panel-body">
+                                    <p><img src="assets/segitiga.jpg" alt="Luas Segitiga"></p>
+                                    <p class="text-left">Rumus Luas Segitiga yaitu :</p>
+                                    <p><b>L = 1/2 x a x t</b></p>
+                                    <p class="text-left">Di mana :<br />L = Luas<br />a = Panjang Alas<br />t = Tinggi</p>
+                                </div>
+                                <div class="panel-footer">
+                                    <h3>Hitung Luas Segitiga</h3>
+                                        <input class="form-control" id="alas" placeholder="Masukkan Nilai Alas" type="text" required /><br />
+                                        <input class="form-control" id="tinggi" placeholder="Masukan Nilai Tinggi" type="text" required />
+                                        <div id="result-luas-segitiga" class="resultArea"></div>
+                                        <button class="btn btn-lg" onclick="luas_segitiga()">Hitung</button>
+                                        <p class="text-right">
+                                             <button class="btn btn-warning" onclick="reset_luas();">Reset</button>
+                                        </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div id="kel-segitiga" class="panel panel-default text-center">
+                                <div class="panel-heading">
+                                    <h2>Keliling Segitiga</h2>
+                                </div>
+                                <div class="panel-body">
+                                    <p><img src="assets/segitiga.jpg" alt="Keliling Segitiga"></p>
+                                    <p class="text-left">Rumus Keliling Segitiga yaitu :</p>
+                                    <p><b>K = S1 + S2 + S3</b></p>
+                                    <p class="text-left">Di mana :<br />K = Keliling<br />S1 = Sisi A<br />S2 =  Sisi B<br />S3 = Sisi C</p>
+                                </div>
+                                <div class="panel-footer">
+                                    <h3>Hitung Keliling Segitiga</h3>
+                                        <input class="form-control" id="sisiA" placeholder="Masukkan Nilai Sisi A" type="text" required /><br />
+                                        <input class="form-control" id="sisiB" placeholder="Masukkan Nilai Sisi B" type="text" required /><br />
+                                        <input class="form-control" id="sisiC" placeholder="Masukkan Nilai Sisi C" type="text" required />
+                                        <div id="result-keliling-segitiga" class="resultArea"></div>
+                                        <button class="btn btn-lg" onclick="keliling_segitiga()">Hitung</button>
+                                        <p class="text-right">
+                                            <button class="btn btn-warning" onclick="reset_keliling();">Reset</button>
+                                        </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+				</div>
+			</div>			
+		</div>
+        <footer class="text-center">
+			<p>Created by Nurkhairi Amini</p>
+		</footer>
+    </body>
+</html>
